@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   CalcNova stores only history.json and settings.json (calculator history
+   and app preferences - never anything sensitive). Both are included in
+   Android's automatic backup by default, which is fine for this app.
+-->
+<full-backup-content>
+    <include domain="file" path="." />
+</full-backup-content>
