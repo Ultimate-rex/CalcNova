@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Modern (Android 12+) equivalent of backup_rules.xml. Same reasoning:
+   CalcNova only ever writes history.json and settings.json, neither of
+   which contains anything sensitive, so both are safe to include in
+   backups and device-to-device transfer.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="." />
+    </device-transfer>
+</data-extraction-rules>
